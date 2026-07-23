@@ -1,4 +1,5 @@
 # DataVis_HW——图片颜色聚类可视化
+
 ## 王业涵 &nbsp;10245102458  
 
 ###  一、项目简介  
@@ -29,8 +30,7 @@ DataVis_HW
     │   └── main.py
     ├── .env.example
     ├── requirements.txt
-    ├── README.md
-    └── Screenshots/
+    └── README.md
 ```  
 
 ---
@@ -109,13 +109,13 @@ DataVis_HW
 ---  
 ### 八、作品截图
 <div align="center">
-    <img src="Screenshots/Portfolio_Screenshot_1.png" width="800" alt="项目界面截图">
+    <img src="https://cdn.jsdelivr.net/gh/VisionNext100/Image-Hosting/images/Image-Color-Clustering/Portfolio_Screenshot_1.png" width="800" alt="项目界面截图">
     <br>
     <em>图1：ECharts 可视化结果与 Anaconda 终端日志（聚类数：5，颜色空间：RGB，可视化样式：Pie Chart）</em>
 </div>  
 <br>
 <div align="center">
-    <img src="Screenshots/Portfolio_Screenshot_2.png" width="800" alt="项目界面截图">
+    <img src="https://cdn.jsdelivr.net/gh/VisionNext100/Image-Hosting/images/Image-Color-Clustering/Portfolio_Screenshot_2.png" width="800" alt="项目界面截图">
     <br>
     <em>图2：ECharts 可视化结果全屏展示（聚类数：7，颜色空间：LAB，可视化样式：Bar Chart）</em>
 </div>
