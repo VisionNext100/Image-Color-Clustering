@@ -4,7 +4,7 @@
 ###  一、项目简介  
 本项目是一个基于 Web 的图片颜色分析工具，能够自动提取图片中的主要色彩，并通过 API 调用 LLM，使其对颜色搭配的和谐度进行评价。
 
-当前推荐使用 **Streamlit 部署版**（`app.py`），可一键部署到 Streamlit Community Cloud；仓库中同时保留了早期的 FastAPI + HTML **本地运行版**（见 `legacy/`）。
+当前推荐使用 **Streamlit 部署版**，可一键部署到 Streamlit Community Cloud；仓库中同时保留了早期的 FastAPI + HTML **本地运行版**，见 `legacy/`。
 
 ---
 
@@ -12,7 +12,7 @@
 - **主应用 (Streamlit)**: Python 3.10+, Streamlit, Plotly, NumPy, Pillow
 - **算法**: K-means 聚类（支持 RGB / LAB）
 - **LLM**: GPT-3.5-Turbo（支持 OpenAI 官方接口与 openai-proxy.org 代理，可切换）
-- **本地旧版 (可选)**: HTML / CSS / JavaScript, Apache ECharts, FastAPI
+- **本地旧版**: HTML / CSS / JavaScript, Apache ECharts, FastAPI
 
 ---
 
@@ -61,7 +61,7 @@ DataVis_HW1
 
 ---
 
-### 六、快速复现（Streamlit，推荐）
+### 六、快速复现
 1. **安装依赖**
    ```bash
    pip install -r requirements.txt
@@ -87,8 +87,8 @@ DataVis_HW1
 
 ---
 
-### 七、本地运行版（legacy/，可选）
-适合希望体验前后端分离架构的同学。
+### 七、本地运行版
+适合希望体验前后端分离架构的开发者。
 
 1. **后端启动**
    - 在项目根目录安装依赖: `pip install -r requirements.txt`；
@@ -102,9 +102,6 @@ DataVis_HW1
 2. **前端运行**
    - 使用 VS Code 的 Live Server 插件打开 `legacy/index.html`；
    - 确保前端访问地址为 [http://127.0.0.1:5500](http://127.0.0.1:5500)。
-
-> GitHub Pages 静态演示（仅前端展示，不含密钥相关能力）: [https://visionnext100.github.io/](https://visionnext100.github.io/)  
-> 源码仓库: [https://github.com/VisionNext100/VisionNext100.github.io](https://github.com/VisionNext100/VisionNext100.github.io)
 
 ---  
 ### 八、作品截图

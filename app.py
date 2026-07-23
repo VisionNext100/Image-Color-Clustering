@@ -357,14 +357,10 @@ with st.sidebar:
         help="也可在 .env 或 Streamlit Secrets 中预先配置 OPENAI_API_KEY。",
     )
 
-    st.divider()
-    st.caption("DataVis Homework · Streamlit")
-
-
 # ---------------------------------------------------------------------------
 # 主区域
 # ---------------------------------------------------------------------------
-st.markdown('<p class="hero-title">图片颜色 K-means 聚类可视化</p>', unsafe_allow_html=True)
+st.markdown('<p class="hero-title">图片颜色聚类可视化</p>', unsafe_allow_html=True)
 st.markdown(
     '<p class="hero-sub">提取主色调 · Plotly 交互图表 · LLM 色彩和谐度评估</p>',
     unsafe_allow_html=True,
@@ -407,7 +403,7 @@ else:
         fig = build_chart(cluster_data, chart_type)
         st.plotly_chart(fig, use_container_width=True)
 
-    st.markdown("#### 颜色搭配分析")
+    st.markdown("**颜色搭配分析**")
     analyze = st.button("调用大模型判断和谐度", type="primary", use_container_width=False)
 
     if analyze:
