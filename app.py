@@ -360,11 +360,8 @@ with st.sidebar:
 # ---------------------------------------------------------------------------
 # 主区域
 # ---------------------------------------------------------------------------
-st.markdown('<p class="hero-title">图片颜色聚类可视化</p>', unsafe_allow_html=True)
-st.markdown(
-    '<p class="hero-sub">提取主色调 · Plotly 交互图表 · LLM 色彩和谐度评估</p>',
-    unsafe_allow_html=True,
-)
+st.title("图片颜色聚类可视化")
+st.markdown("提取主色调 · Plotly 交互图表 · LLM 色彩和谐度评估")
 
 if "ai_reply" not in st.session_state:
     st.session_state.ai_reply = ""
