@@ -333,14 +333,6 @@ def resolve_api_key(ui_key: str) -> str | None:
 # 侧边栏
 # ---------------------------------------------------------------------------
 with st.sidebar:
-    st.markdown("### 背景音乐")
-    if AUDIO_PATH.exists():
-        st.audio(str(AUDIO_PATH), format="audio/mp3", autoplay=True)
-        st.caption("若浏览器拦截自动播放，请手动点击播放；可随时暂停。")
-    else:
-        st.warning("未找到音频文件：assets/Windy_Hill.mp3")
-
-    st.divider()
     st.markdown("### 控制面板")
     st.caption("上传图片并调节参数，即可完成颜色聚类。")
 
@@ -367,6 +359,14 @@ with st.sidebar:
         placeholder="sk-...",
         help="也可在 .env 或 Streamlit Secrets 中预先配置 OPENAI_API_KEY。",
     )
+
+    st.divider()
+    st.markdown("### 背景音乐")
+    if AUDIO_PATH.exists():
+        st.audio(str(AUDIO_PATH), format="audio/mp3", autoplay=True)
+        st.caption("配上背景音乐，看图和调色都会更轻松一点。")
+    else:
+        st.warning("未找到音频文件：assets/Windy_Hill.mp3")
 
 # ---------------------------------------------------------------------------
 # 主区域

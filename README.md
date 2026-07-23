@@ -47,6 +47,7 @@ DataVis_HW
    - API Key 网页填写: 侧边栏密码框输入密钥，仅保存在当前会话，无需手动编辑 `.env`；
    - 双接口切换: 可在 `api.openai.com` 与 `openai-proxy.org` 之间切换；
    - AI 智能评估: 结合 LLM 对提取的颜色组合进行审美分析，并给出具体的色彩改进建议；
+   - 背景音乐: 侧边栏内置 `Windy_Hill.mp3` 播放器，支持自动播放与手动暂停，提升交互氛围；
    - 在线部署: 可直接部署到 Streamlit Community Cloud。
 
 ---
