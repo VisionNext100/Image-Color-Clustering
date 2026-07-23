@@ -18,8 +18,10 @@
 
 ### 三、项目结构  
 ```
-DataVis_HW1
+DataVis_HW
     ├── app.py                 # Streamlit 主入口（推荐）
+    ├── assets/
+    │   └── Windy_Hill.mp3     # 侧边栏背景音乐
     ├── .streamlit/
     │   └── config.toml        # 页面主题配置
     ├── legacy/                # 本地运行版（FastAPI + HTML）

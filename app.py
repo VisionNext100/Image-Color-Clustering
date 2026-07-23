@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import os
+from pathlib import Path
 from typing import Literal
 
 import numpy as np
@@ -13,6 +14,8 @@ from dotenv import load_dotenv
 from PIL import Image
 
 load_dotenv()
+
+AUDIO_PATH = Path(__file__).resolve().parent / "assets" / "Windy_Hill.mp3"
 
 # ---------------------------------------------------------------------------
 # 页面与主题
@@ -330,6 +333,14 @@ def resolve_api_key(ui_key: str) -> str | None:
 # 侧边栏
 # ---------------------------------------------------------------------------
 with st.sidebar:
+    st.markdown("### 背景音乐")
+    if AUDIO_PATH.exists():
+        st.audio(str(AUDIO_PATH), format="audio/mp3", autoplay=True)
+        st.caption("若浏览器拦截自动播放，请手动点击播放；可随时暂停。")
+    else:
+        st.warning("未找到音频文件：assets/Windy_Hill.mp3")
+
+    st.divider()
     st.markdown("### 控制面板")
     st.caption("上传图片并调节参数，即可完成颜色聚类。")
 
